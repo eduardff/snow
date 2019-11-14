@@ -1,0 +1,20 @@
+//Breakpoints para RW
+$breakpoints: (
+    small : 0, //Todos los tamaños de moviles
+    medium: 640px, // Tablet 640px
+    large: 1024px, //Laptop 1024px
+    xlarge: 1440px // Desktop 1440px
+); 
+
+// Mixin Responsive Desing
+@mixin desde($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and(min-width : map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }@else{
+        @media screen and (min-width: $breakpoint){
+            @content;
+        }
+    }
+}

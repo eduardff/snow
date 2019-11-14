@@ -1,0 +1,39 @@
+.footer{
+    background: $color-bg-footer;
+    
+}
+.footer__nav{
+
+}
+.footer__menu{
+    display: flex;
+    color: $color-fg-light;
+    justify-content: center;
+    margin: 0;
+}
+.footer__item{
+    margin-left: 1rem;
+    &:first-child{
+        margin-left:0;
+    }
+    a{
+        color: $color-fg-light;
+        font-size: var(--normal-font-size);
+        &:hover{
+            color:$color-fg-bold;
+        }
+    }
+}
+.footer__info{
+    margin:0;
+    text-align: center;
+    margin-top: 1rem;
+    a{
+        color: inherit;
+        font-size: inherit;
+        font-family: $font-family;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

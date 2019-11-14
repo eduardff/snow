@@ -1,0 +1,39 @@
+/* Features */
+.features{
+    background-color: $color-fg-featueres;
+    color: $color-bg;
+}
+.feature__container{
+
+    @include desde(medium){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1rem;
+    }
+    @include desde (large){
+        grid-template-columns:repeat(4,1fr);
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.feature__box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    &:last-child{
+        margin-bottom: 0;
+        @include desde(large){
+            margin-bottom: 2rem;
+        }
+    }
+}
+.icon{
+        font-size: 3rem;
+}
+.content{
+      margin-left: 1.5rem;
+      text-transform: uppercase;
+      p{
+          margin: 0;
+      }
+    }

@@ -1,0 +1,17 @@
+/* Firma */
+.firma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include desde(large){
+        width: 70%;
+    }
+}
+.firma__text{
+    @include desde(large){
+        max-width: 80%;
+    }
+}
+

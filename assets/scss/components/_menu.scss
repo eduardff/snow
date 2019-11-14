@@ -1,0 +1,39 @@
+/* Menu */
+.nav{
+    position: fixed;
+    height: calc(100vh - #{$header-height});
+    width: 100vw;
+    top: $header-height;
+    right: -100vw;
+    background: $color-fg-bold;
+    opacity: 0.9;
+    transition: right .5s;
+    z-index: $z-index-fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &.show{
+        right: 0;
+    }
+}
+.menu{
+    margin: 0;
+    padding: 0;
+}
+.menu__item{
+    padding: 1rem;
+    text-align: center;
+}
+.menu__link{
+    padding: 0 2em;
+    &:hover{
+        color: $color-bg;
+    }
+}
+.menu-toggle{
+    font-size: 1.5em;
+    cursor: pointer;
+    color:#fff;
+}

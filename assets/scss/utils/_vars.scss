@@ -1,0 +1,44 @@
+
+//Font
+    $font-family:                  ('Work Sans', sans-serif);       //para el body
+    $font-heading:                 ('Playfair Display', serif);     //para titulos
+
+    $font-weight-regular:          400;                            //por defecto
+    $font-weight-medium:           500;                             //menus y subtitulo
+    $font-weight-heading:          700;                             //bold de los titulos
+    
+    $kerning:                      .004em;                          //espacios de letras en general
+    $kerning-heading:              .2em;                            //espacio de letras para el título
+
+// Font Size
+    :root {
+        --normal-font-size:        1rem;                            //Fuente normal para todo el body
+        --medium-font-size:        1.5rem;                          //Un tamaño mayor que normal
+        --small-font-size:         0.84rem;                         //Un tamaño menor que normal
+        --h1-font-size:            3.4rem;                          //Fuente para el H1
+        --h2-font-size:            2.5rem;                          //Fuente para el H2
+        --h2-font-size-medium:     1.4rem;                          //Fuente para el H2 de las entradas del blog(inicio)                       
+        --h2-font-size-small:     .9rem;                           //Fuente para el H2 que esta dentro del bannner
+    }
+//Color palette
+    $color-bg:                   #ffffff;                         //color de  fondo del body
+    $color-fg-bold:              #171717;                         //Color de primer plano para titulos
+    $color-fg-light:             #5f5f5f;                         //color de primer plano para textos
+    $color-fg-featueres:         #1c1c1c;
+    $color-bg-contact:           #f6f6f6;                         //color de fondo de contacto
+    $color-bg-footer:            #ebebeb;                         //color de fondo del footer
+    
+//Z-Index
+    $z-index-dropdown:             1000;
+    $z-index-sticky:               1020;
+    $z-index-fixed:                1030;
+    $z-index-modal-backdrop:       1040;
+    $z-index-modal:                1050;
+    $z-index-popover:              1060;
+    $z-index-tooltip:              1070;
+
+//size
+    $element-margin:               1rem;     //margin de algun elemento
+    $header-height:                4rem;       //alto del header
+//l-Container
+    $container: 1200px;

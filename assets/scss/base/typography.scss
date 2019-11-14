@@ -1,0 +1,56 @@
+/* Typography */
+
+
+body{ 
+    font-family: $font-family;
+    font-weight: $font-weight-regular;
+    color: $color-fg-light;
+    font-size: var(--normal-font-size);
+    letter-spacing: $kerning;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $font-heading;
+    font-weight: $font-weight-heading;
+    margin: 0 0 $element-margin 0;
+    color: $color-fg-bold;
+    
+    a{
+        color: inherit; //esta propiedad hereda los colores a la fuerza de los encabezado
+        &:hover{
+            color: $color-fg-light;//Este hover es para las entradas del blog
+            text-decoration: underline;
+        }
+    }
+}
+h1{
+    font-size: var(--h1-font-size);
+    em{
+        font-size: inherit;
+    }
+}
+h2{
+    font-size: var(--h2-font-size);
+    line-height: 0.7;
+    
+}
+a{
+    font-family: $font-heading; // comparte el mismo tipo de fuente que las cabeceras
+    font-size: var(--medium-font-size);
+    text-decoration: none;
+    color: $color-bg-footer;
+}
+span{
+    font-size: var(--small-font-size);
+    text-transform: uppercase;
+}
+em{
+    font-style: italic;
+    line-height: 1.5;
+    font-family: $font-heading;
+    font-size: var(--h2-font-size-medium);
+}
+p,cite{
+    margin: 0 0 $element-margin 0; //esto le dará un margin abajo a todos los p
+    line-height: 1.5;
+    padding: 0 $element-margin; //esto le dará un padding a los costados a todos los p
+}
