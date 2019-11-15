@@ -5,10 +5,6 @@
 .proyects__content{
     text-align: center;
     margin: 0 auto 2rem auto;
-    @include desde(large){
-        width: 70%;
-        max-width: 80%;
-    }
 }
 .gallery{
     @include desde (medium){
