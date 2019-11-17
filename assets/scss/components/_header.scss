@@ -1,8 +1,8 @@
 /* Header */
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: $color-bg;
+}
+.header{
     height: $header-height;
     // background: $color-bg;
     position: fixed;
@@ -11,6 +11,14 @@
     bottom: 0;
     left: 0;
     z-index: $z-index-fixed;
+
+    // background: #000;
+}
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
 }
 .header__logo{
    color: #fff;

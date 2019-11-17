@@ -10,10 +10,21 @@
     transition: right .5s;
     z-index: $z-index-fixed;
 
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include desde (large){
+        position: static;
+        background: transparent;
+        padding-top: 0;
+        height: auto;
+        width: auto;
+        
+    }
     &.show{
         right: 0;
     }
@@ -21,19 +32,39 @@
 .menu{
     margin: 0;
     padding: 0;
+    @include desde(large){
+        
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 1rem;
+    }
 }
 .menu__item{
     padding: 1rem;
     text-align: center;
+    @include desde(large){
+        padding: 0;
+    }
 }
 .menu__link{
-    padding: 0 2em;
+    text-transform: uppercase;
     &:hover{
         color: $color-bg;
+    }
+    @include desde(large){
+        font-size:var(--small-font-size);
+        font-family: $font-family;
+        color: $color-fg-featueres;
+        &:hover{
+            color: $color-fg-light;
+        }
     }
 }
 .menu-toggle{
     font-size: 1.5em;
     cursor: pointer;
-    color:#fff;
+    color:$color-fg-bold;
+    @include desde(large){
+        display: none;
+    }
 }

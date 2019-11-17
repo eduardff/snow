@@ -4,6 +4,9 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    @include desde(medium){
+        width: 85%;
+    }
 }
 section{
     padding-top: 5rem;

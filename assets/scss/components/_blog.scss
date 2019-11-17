@@ -12,6 +12,9 @@
     @include desde(medium){
         grid-template-columns: repeat(2,1fr);
     }
+    @include desde (large){
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 .main-blog__post{
     background: $color-bg;
