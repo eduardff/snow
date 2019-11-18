@@ -1,0 +1,14 @@
+/* Nuevos estilos para el blog */
+.main-blog{
+    padding-top: 9rem;
+}
+.blog-variant{
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    @include desde(medium){
+        max-width: 86%;
+    }
+    @include desde(large){
+        max-width: 66%;
+    }
+}
