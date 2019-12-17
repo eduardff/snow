@@ -1,25 +1,25 @@
 /* Header */
-.header{
-    background: $color-bg;
+.header {
+  background: $color-bg;
 }
-.header{
-    height: $header-height;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: $z-index-fixed;
+.header {
+  height: $header-height;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $z-index-fixed;
 }
-.header__content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: $header-height;
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $header-height;
 }
-.header__logo{
-   color: #fff;
+.header__logo {
+  color: #fff;
 }
-.logo{
-     height: 2rem;
+.logo {
+  height: 2rem;
 }
